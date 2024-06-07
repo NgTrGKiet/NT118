@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
+                    System.out.println(2222);
                     // Calculate nev value
                     int progressStep = 5;
                     double totalTime = (System.currentTimeMillis() - startTime) / 1000;
@@ -74,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
+                    System.out.println(12111);
                     for (int i = 0; i < 20; i++) {
                         // Sleep 1
                         Thread.sleep(1000);
@@ -109,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //Start thread
+        System.out.println(147852);
         testThread.start();
         pbWaiting.incrementProgressBy(0);
     }

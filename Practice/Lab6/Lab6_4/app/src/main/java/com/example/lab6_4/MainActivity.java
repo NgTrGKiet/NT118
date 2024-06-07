@@ -24,9 +24,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        System.out.println("Khoi tao thanh cong");
 
         tabLayout = findViewById(R.id.tabLayout);
+        System.out.println("tabLayout");
         viewPager = findViewById(R.id.viewPager);
+        System.out.println("viewPager");
 
         tabLayout.setupWithViewPager(viewPager);
 

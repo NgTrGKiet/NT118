@@ -16,6 +16,8 @@ public class frag2 extends Fragment{
     private String mParam2;
 
     public frag2() {
+        System.out.println("Khoi tao fragment2");
+
         // Required empty public constructor
     }
 
@@ -29,6 +31,7 @@ public class frag2 extends Fragment{
      */
     // TODO: Rename and change types and number of parameters
     public static frag2 newInstance(String param1, String param2) {
+        System.out.println("Khoi tao fragment2-2");
         frag2 fragment = new frag2();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
@@ -39,7 +42,9 @@ public class frag2 extends Fragment{
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        System.out.println("Khoi tao fragment2-3");
         super.onCreate(savedInstanceState);
+        System.out.println("Khoi tao fragment2-4");
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -50,6 +55,7 @@ public class frag2 extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        System.out.println("Khoi tao fragment2-5");
         return inflater.inflate(R.layout.fragment_2, container, false);
     }
 }

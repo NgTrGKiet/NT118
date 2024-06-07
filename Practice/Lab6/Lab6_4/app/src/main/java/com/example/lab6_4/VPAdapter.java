@@ -19,16 +19,18 @@ public class VPAdapter extends FragmentPagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
-
+        System.out.println("position" + position);
         return fragmentArrayList.get(position);
     }
 
     @Override
     public int getCount() {
+        System.out.println("size" + fragmentArrayList.size());
         return fragmentArrayList.size();
     }
 
     public void addFragment(Fragment fragment, String title){
+        System.out.println("them fragment");
         fragmentArrayList.add(fragment);
         fragmentTitle.add(title);
     }
@@ -36,7 +38,7 @@ public class VPAdapter extends FragmentPagerAdapter {
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
-
+        System.out.println("title" + fragmentTitle);
         return fragmentTitle.get(position);
 
     }
